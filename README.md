@@ -91,6 +91,9 @@ sudo cmake --build . --target install
 ```
 
 Copy all the poco file from /usr/local/lib/ to /usr/lib
+```bash
+sudo cp /usr/local/lib/libPoco* /usr/lib
+```
 
 ### Install Boost C++
 
