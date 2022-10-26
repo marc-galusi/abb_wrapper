@@ -100,6 +100,9 @@ void EGMControllerInterface::ControllerMotion::readOutputs(wrapper::Output* p_ou
   }
 }
 
+// See https://stackoverflow.com/questions/16957458/static-const-in-c-class-undefined-reference/16957554
+const unsigned int EGMControllerInterface::ControllerMotion::WRITE_TIMEOUT_MS;
+
 bool EGMControllerInterface::ControllerMotion::waitForMessage(const unsigned int timeout_ms)
 {
   boost::unique_lock<boost::mutex> lock(read_mutex_);

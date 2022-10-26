@@ -808,6 +808,10 @@ bool EGMBaseInterface::initializeCallback(const UDPServerData& server_data)
   return success;
 }
 
+// See https://stackoverflow.com/questions/16957458/static-const-in-c-class-undefined-reference/16957554
+const unsigned int EGMBaseInterface::WAIT_TIME_MS;
+
+
 /************************************************************
  * User interaction methods
  */
